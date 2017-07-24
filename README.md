@@ -1,10 +1,8 @@
 # JavaTask
-===
-
 Author
 -------
 
-*	SU Hui
+SU Hui
 
 Description
 -----------
