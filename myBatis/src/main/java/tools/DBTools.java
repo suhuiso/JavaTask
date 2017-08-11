@@ -22,7 +22,7 @@ public class DBTools {
         }
     }
 
-    public SqlSession getSession(){
+    public static SqlSession getSession(){
         sqlSession = sqlSessionFactory.openSession();
         return sqlSession;
     }

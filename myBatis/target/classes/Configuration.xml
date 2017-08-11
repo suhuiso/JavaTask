@@ -23,7 +23,7 @@
         <mapper resource="mapper/Student.xml"/>-->
 
         <!-- 告知映射文件方式2，自动扫描包内的Mapper接口与配置文件 -->
-        <!--package name="mapper"/-->
+        <!--package name="mappers"/-->
         <mapper resource="mapper/StudentMapper.xml"/>
 
     </mappers>
