@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.suhuiso.ssm.mapper.StudentMapper">
+
+    <select id="getAllStudent"  resultType="com.suhuiso.ssm.model.Student">
+        select * from student
+    </select>
+
+    <select id="getStudentById"  parameterType="int" resultType="com.suhuiso.ssm.model.Student">
+        select * from student where id=#{id}
+    </select>
+
+    <insert id="addStudent" parameterType="com.suhuiso.ssm.model.Student" >
+
+        insert into student (name, type, c_num, update_at, create_at, declaration) values (#{name}, #{type}, #{num}, #{updateAt}, #{createAt}, #{declaration})
+    </insert>
+    <update id="updateStudent" parameterType="com.suhuiso.ssm.model.Student" >
+        update student set name =#{name}, type=#{type}, c_num=#{num}, update_at=#{updateAt}, create_at=#{createAt}, declaration=#{declaration} where id=#{id}
+    </update>
+    <delete id="deleteStudent" parameterType="int">
+        delete from student where id=#{id}
+    </delete>
+
+</mapper>

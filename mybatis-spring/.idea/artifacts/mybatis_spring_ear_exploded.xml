@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="mybatis-spring:ear exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/mybatis_spring_ear_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="mybatis-spring/javaeeApplication/javaEEApplication" />
+    </root>
+  </artifact>
+</component>
